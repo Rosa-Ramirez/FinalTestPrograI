@@ -4,11 +4,11 @@ package finaltest;
 import java.util.Scanner;
 
 public class DepartmentsArrays {
-    private String departmentName;
-    private int numberMunicipalities;
-    private String header;
-    private DepartmentsArrays[] departments;
-    private int countDepartment;
+    protected String departmentName;
+    protected int numberMunicipalities;
+    protected String header;
+    protected DepartmentsArrays[] departments;
+    protected int countDepartment;
     
     public DepartmentsArrays(String departmentName, int numberMunicipalities, String header){
         this.departmentName = departmentName;
@@ -28,6 +28,7 @@ public class DepartmentsArrays {
         
         System.out.println("--> Ingrese la cantidad de Municipios");
         numberMunicipalities = sc.nextInt();
+        sc.nextLine();
         
         System.out.println("--> Ingrese la cabecera: ");
         header = sc.nextLine();
@@ -35,6 +36,7 @@ public class DepartmentsArrays {
         departments[countDepartment] = new DepartmentsArrays(departmentName, numberMunicipalities, header);
         countDepartment++;
         System.out.println("-------------Departamento Registrado Correctamente-------------");
+        sc.nextLine();
     }
     
     public void showDepartments(){
