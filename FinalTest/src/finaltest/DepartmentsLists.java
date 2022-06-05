@@ -75,4 +75,8 @@ public class DepartmentsLists {
         }
        
     }
+    
+    public void deleteList(){
+        departments.clear();
+    }
 }
