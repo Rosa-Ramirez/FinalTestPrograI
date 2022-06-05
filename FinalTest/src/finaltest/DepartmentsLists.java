@@ -38,4 +38,17 @@ public class DepartmentsLists {
         sc.nextLine();
     }
     
+    public void showDepartmentsList(){
+        DepartmentsArrays department;
+        System.out.println("-------------Departamentos de Guatemala-------------");
+        
+        System.out.println("( Nombre de Departamento | Cantidad de Municipios | Cabecera )");
+        
+        for (int i = 0; i < departments.size(); i++){
+            department = departments.get(i);
+            System.out.println(department.departmentName + "\t" +
+                    department.numberMunicipalities + "\t" + department.header);
+        }
+        sc.nextLine();
+    }
 }
