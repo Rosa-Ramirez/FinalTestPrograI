@@ -32,7 +32,6 @@ public class MenuArrays extends MenuLists{
                             array.searchPair(); break;
                     }
                     break;
-                case 0: break;
                 default: System.out.println("***Opcion no valida***"); break;
             }
         }

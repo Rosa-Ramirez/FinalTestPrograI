@@ -29,7 +29,7 @@ public class DepartmentsLists {
         
         System.out.println("--> Ingrese el nombre: ");
         departmentName = sc.nextLine();
-        //history.add(departmentName);
+        history.add(departmentName);
         
         System.out.println("--> Ingrese la cantidad de Municipios");
         numberMunicipalities = sc.nextInt();
@@ -74,5 +74,6 @@ public class DepartmentsLists {
     
     public void deleteList(){
         departments.clear();
+        history.clear();
     }
 }
