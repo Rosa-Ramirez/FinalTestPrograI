@@ -30,6 +30,7 @@ public class MenuLists {
                 System.out.println("--------Lista vaciada--------"); 
                 sc.nextLine();
                 break;
+                case 0: break;
                 default: System.out.println("Opcion no valida"); break;
             }
         }
