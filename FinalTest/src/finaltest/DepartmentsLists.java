@@ -29,7 +29,7 @@ public class DepartmentsLists {
         
         System.out.println("--> Ingrese el nombre: ");
         departmentName = sc.nextLine();
-        history.add(departmentName);
+        //history.add(departmentName);
         
         System.out.println("--> Ingrese la cantidad de Municipios");
         numberMunicipalities = sc.nextInt();
@@ -64,13 +64,12 @@ public class DepartmentsLists {
         search = sc.nextLine();
         
         if (history.contains(search)){
-            System.out.println("El departamento" + search + " Sí está en la lista. "
+            System.out.println("El departamento " + search + " Sí está en la lista. "
                     + "Se encuentra en la posición " + history.indexOf(search));
         }
         else{
-            System.out.println("El Departamento" + search + " NO está en la lista.");
+            System.out.println("El Departamento " + search + " NO está en la lista.");
         }
-       
     }
     
     public void deleteList(){
