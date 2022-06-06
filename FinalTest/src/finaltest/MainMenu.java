@@ -2,14 +2,13 @@
 package finaltest;
 import java.util.Scanner;
 public class MainMenu {
-    private int option;
+    protected int option;
     
     public MainMenu(){
         option = 0;
     }
     Scanner sc = new Scanner (System.in);
-    DepartmentsArrays Arrays;
-    DepartmentsLists Lists;
+    MenuArrays menu = new MenuArrays();
     
     public void menu(){
         System.out.println("-------------Menu Principal-------------");
@@ -18,7 +17,8 @@ public class MainMenu {
         option = sc.nextInt();
         
         switch(option){
-            
+            case 1: menu.menuList(); break;
+            case 2: menu.menuArray(); break;
         }
     }
 }

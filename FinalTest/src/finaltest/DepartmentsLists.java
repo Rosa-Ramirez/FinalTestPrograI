@@ -12,7 +12,6 @@ public class DepartmentsLists {
     private String departmentName;
     private int numberMunicipalities;
     private String header;
-    //protected int position;
     protected String search;
     public DepartmentsLists(){
         departments = new ArrayList<>();
@@ -21,7 +20,6 @@ public class DepartmentsLists {
         numberMunicipalities = 0;
         header = "";
         search = "";
-       // position = departments.indexOf(search);
     }
     
     Scanner sc = new Scanner(System.in);
@@ -32,7 +30,6 @@ public class DepartmentsLists {
         System.out.println("--> Ingrese el nombre: ");
         departmentName = sc.nextLine();
         history.add(departmentName);
-        sc.nextLine();
         
         System.out.println("--> Ingrese la cantidad de Municipios");
         numberMunicipalities = sc.nextInt();

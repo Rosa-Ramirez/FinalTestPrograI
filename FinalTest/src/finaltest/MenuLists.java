@@ -4,7 +4,7 @@ package finaltest;
 import java.util.Scanner;
 
 public class MenuLists {
-    private int option;
+    protected int option;
     
     public MenuLists(){
         option = 1;
@@ -26,7 +26,10 @@ public class MenuLists {
                 case 1: list.registerDepartmentsList(); break;
                 case 2: list.showDepartmentsList(); break;
                 case 3: list.searchDepartment(); break;
-                case 4: list.deleteList();
+                case 4: list.deleteList(); 
+                System.out.println("--------Lista vaciada--------"); 
+                sc.nextLine();
+                break;
                 default: System.out.println("Opcion no valida"); break;
             }
         }
